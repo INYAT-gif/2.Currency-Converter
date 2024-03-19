@@ -39,8 +39,6 @@ public class ExchangeApp {
         System.out.println("Currency Converter App:");
         System.out.println("1. Convert SEK to USD");
         System.out.println("2. Convert USD to SEK");
-        System.out.println("3. Convert SEK to Euro");
-        System.out.println("4. Convert Euro to SEK");
         System.out.println("0. Exit");
         System.out.println("Enter your choice: ");
     }
@@ -60,12 +58,7 @@ public class ExchangeApp {
                 sekAmount = ExchangeOperations.convertUSDToSEK(usdAmount);
                 printConversionResult(usdAmount, sekAmount, "USD", "SEK");
                 break;
-            case 3:
-                //todo: call convertSekToEuro method
-                break;
-            case 4:
-                //todo: call convertEuroToSek method
-                break;
+
             case 0:
                 System.out.println("Exiting the currency converter app. Goodbye!");
                 break;
